@@ -15,7 +15,7 @@
 	<description>Project for Spring Boot</description>
 	<packaging>jar</packaging>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 		<jacoco.version>0.8.7</jacoco.version>
    		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
     		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
@@ -73,7 +73,7 @@
 
 		<dependency>
     <groupId>org.jacoco</groupId> 
-    <artifactId>jacoco-maven-plugin</artifactId>
+    <artifactId>jacoco--plugin</artifactId>
     <version>0.8.7</version>
 </dependency>
 	</dependencies>
@@ -82,7 +82,7 @@
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<artifactId>spring-boot--plugin</artifactId>
 				<configuration>
 					<excludes>
 						<exclude>
@@ -95,7 +95,7 @@
 
 			<plugin>
     <groupId>org.jacoco</groupId>
-    <artifactId>jacoco-maven-plugin</artifactId>
+    <artifactId>jacoco--plugin</artifactId>
     <version>${jacoco.version}</version>
     <executions>
         <execution>
@@ -119,12 +119,12 @@
 
 	 <distributionManagement>
         <repository>
-            <id>maven-releases</id>
-            <url>http://3.109.2.230:8081/repository/maven-releases/</url>
+            <id>-releases</id>
+            <url>http://3.109.2.230:8081/repository/-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>maven-snapshots</id>
-            <url>http://3.109.2.230:8081/repository/maven-snapshots/</url>
+            <id>-snapshots</id>
+            <url>http://3.109.2.230:8081/repository/-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
